@@ -7,3 +7,8 @@ CREATE TABLE user (
     email VARCHAR(100) NOT NULL UNIQUE,
     avatar VARCHAR(255)
 );
+
+CREATE TABLE programming_languages {
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    favorites VARCHAR(50) NOT NULL,
+}
