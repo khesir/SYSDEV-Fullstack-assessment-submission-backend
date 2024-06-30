@@ -15,6 +15,8 @@ app.get("/", (req,res) => {
 const userRoute = require('./routes/user')
 app.use("/user", userRoute)
 
+const programLang = require('./routes/programming-languages')
+app.use("/programming_languages", programLang)
 
 const port = process.env.PORT || 3000;
 
